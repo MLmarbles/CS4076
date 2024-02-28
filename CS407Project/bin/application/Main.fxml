@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-4.0" prefHeight="606.0" prefWidth="241.0" style="-fx-background-color: palegreen;">
+         <children>
+            <Label layoutX="25.0" layoutY="25.0" text="Hello," />
+            <Label layoutX="67.0" layoutY="25.0" text="Username" />
+            <Button fx:id="addModule" layoutX="122.0" layoutY="138.0" mnemonicParsing="false" onAction="#addModuleButtonAction" text="Add Module" />
+            <ChoiceBox layoutX="13.0" layoutY="250.0" prefHeight="25.0" prefWidth="83.0" />
+            <VBox layoutX="14.0" layoutY="88.0" prefHeight="123.0" prefWidth="83.0" spacing="10.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="module1" text="Label" />
+                  <Label fx:id="module2" text="Label" />
+                  <Label fx:id="module3" text="Label" />
+                  <Label fx:id="module4" text="Label" />
+                  <Label fx:id="module5" text="Label" />
+               </children>
+            </VBox>
+            <Button fx:id="removeModule" layoutX="112.0" layoutY="177.0" mnemonicParsing="false" onAction="#removeModuleButtonAction" text="Remove Module" />
+            <TextField fx:id="enterModuleCode" layoutX="100.0" layoutY="94.0" prefHeight="25.0" prefWidth="128.0" promptText="Enter Module Code" />
+            <Label layoutX="18.0" layoutY="226.0" text="Select Module" />
+            <Button layoutX="111.0" layoutY="333.0" mnemonicParsing="false" text="Display Schedule" />
+            <Button layoutX="119.0" layoutY="291.0" mnemonicParsing="false" text="Remove Class" />
+            <Button layoutX="130.0" layoutY="250.0" mnemonicParsing="false" text="Add Class" />
+            <Label fx:id="serverOutput" layoutX="13.0" layoutY="53.0" text="Server: " />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="233.0" prefHeight="600.0" prefWidth="45.0" spacing="42.0" style="-fx-background-color: pink;">
+         <children>
+            <Label text="Time" />
+            <Label text="9:00">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="10:00" />
+            <Label text="11:00" />
+            <Label text="12:00" />
+            <Label text="13:00" />
+            <Label text="14:00" />
+            <Label text="15:00" />
+            <Label text="16:00" />
+            <Label text="17:00" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </padding>
+      </VBox>
+      <HBox layoutX="277.0" layoutY="-3.0" prefHeight="17.0" prefWidth="518.0" spacing="50.0" style="-fx-background-color: pink;">
+         <children>
+            <Label text="Monday">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label text="Tuesday" />
+            <Label text="Wednesday" />
+            <Label text="Thursday" />
+            <Label text="Friday" />
+         </children>
+      </HBox>
+      <HBox layoutX="277.0" layoutY="14.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: skyblue;">
+         <children>
+            <Label fx:id="monday9" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday9" text="Label" />
+            <Label fx:id="wednesday9" text="Label" />
+            <Label fx:id="thursday9" text="Label" />
+            <Label fx:id="friday9" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="278.0" layoutY="79.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: palegreen;">
+         <children>
+            <Label fx:id="monday10" text="Label">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday10" text="Label" />
+            <Label fx:id="wednesday10" text="Label" />
+            <Label fx:id="thursday10" text="Label" />
+            <Label fx:id="friday10" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="278.0" layoutY="144.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: beige;">
+         <children>
+            <Label fx:id="monday11" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday11" text="Label" />
+            <Label fx:id="wednesday11" text="Label" />
+            <Label fx:id="thursday11" text="Label" />
+            <Label fx:id="friday11" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="277.0" layoutY="209.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: pink;">
+         <children>
+            <Label fx:id="monday12" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday12" text="Label" />
+            <Label fx:id="wednesday12" text="Label" />
+            <Label fx:id="thursday12" text="Label" />
+            <Label fx:id="friday12" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="278.0" layoutY="268.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: beige;">
+         <children>
+            <Label fx:id="monday13" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday13" text="Label" />
+            <Label fx:id="wednesday13" text="Label" />
+            <Label fx:id="thursday13" text="Label" />
+            <Label fx:id="friday13" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="278.0" layoutY="326.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: palegreen;">
+         <children>
+            <Label fx:id="monday14" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday14" text="Label" />
+            <Label fx:id="wednesday14" text="Label" />
+            <Label fx:id="thursday14" text="Label" />
+            <Label fx:id="friday14" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="278.0" layoutY="391.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: skyblue;">
+         <children>
+            <Label fx:id="monday15" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday15" text="Label" />
+            <Label fx:id="wednesday15" text="Label" />
+            <Label fx:id="thursday15" text="Label" />
+            <Label fx:id="friday15" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="278.0" layoutY="456.0" prefHeight="65.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: pink;">
+         <children>
+            <Label fx:id="monday16" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday16" text="Label" />
+            <Label fx:id="wednesday16" text="Label" />
+            <Label fx:id="thursday16" text="Label" />
+            <Label fx:id="friday16" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="277.0" layoutY="521.0" prefHeight="86.0" prefWidth="518.0" spacing="75.0" style="-fx-background-color: beige;">
+         <children>
+            <Label fx:id="monday17" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday17" text="Label" />
+            <Label fx:id="wednesday17" text="Label" />
+            <Label fx:id="thursday17" text="Label" />
+            <Label fx:id="friday17" text="Label" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
