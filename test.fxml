@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="mainText" accessibleRole="DIALOG" editable="false" layoutX="149.0" layoutY="380.0" prefHeight="147.0" prefWidth="414.0" promptText="Type any message in text box to establish connection with the server." wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <ToolBar layoutY="526.0" prefHeight="74.0" prefWidth="800.0" style="-fx-background-color: palegreen;">
+         <items>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15;">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/CS4076ProjectClient-master/CS4076ProjectClient-master/src/main/resources/com/example/cs4076projectclient/email.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15;">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/CS4076ProjectClient-master/CS4076ProjectClient-master/src/main/resources/com/example/cs4076projectclient/bellIcon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="mainTextField1" onAction="#updateTextField" prefHeight="60.0" prefWidth="260.0" promptText="Enter text here" style="-fx-background-color: white; -fx-background-radius: 15;" />
+            <Button fx:id="stop11" mnemonicParsing="false" prefHeight="60.0" prefWidth="77.0" style="-fx-background-color: #8CA0B1; -fx-background-radius: 15;" text="Enter" />
+            <Button fx:id="stop1" mnemonicParsing="false" prefHeight="60.0" prefWidth="77.0" style="-fx-background-color: #8CA0B1; -fx-background-radius: 15;" text="Stop" />
+            <Line endX="659.0784912109375" endY="-0.01811319589614868" startX="812.3713989257812" startY="0.061566174030303955" stroke="#48f886" />
+            <Button fx:id="settingsButton" alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15;">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/CS4076ProjectClient-master/CS4076ProjectClient-master/src/main/resources/com/example/cs4076projectclient/setting.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </items>
+      </ToolBar>
+      <MenuBar prefHeight="25.0" prefWidth="800.0" style="-fx-background-color: palegreen;">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane layoutY="26.0" prefHeight="501.0" prefWidth="148.0" style="-fx-background-color: palegreen;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="33.0" layoutY="24.0" prefHeight="123.0" prefWidth="83.0" spacing="10.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="module1" text="Label" />
+                  <Label fx:id="module2" text="Label" />
+                  <Label fx:id="module3" text="Label" />
+                  <Label fx:id="module4" text="Label" />
+                  <Label fx:id="module5" text="Label" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <TextField fx:id="enterModuleCode" layoutX="10.0" layoutY="164.0" prefHeight="25.0" prefWidth="128.0" promptText="Enter Module Code" />
+            <Button layoutX="31.0" layoutY="407.0" mnemonicParsing="false" text="Remove Class" />
+            <Button fx:id="addModule" layoutX="23.0" layoutY="206.0" mnemonicParsing="false" onAction="#addModuleButtonAction" prefHeight="25.0" prefWidth="103.0" text="Add Module" />
+            <Button fx:id="removeModule" layoutX="23.0" layoutY="251.0" mnemonicParsing="false" onAction="#removeModuleButtonAction" text="Remove Module" />
+            <Button layoutX="20.0" layoutY="292.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Display Schedule" />
+            <Label layoutX="36.0" layoutY="439.0" text="Select Module" />
+            <Label layoutX="43.0" layoutY="6.0" text="Module List" />
+            <Line endX="16.0" endY="1.0" layoutX="100.0" layoutY="23.0" startX="-67.0" startY="1.0" />
+            <Line endX="-152.0" endY="1.0" layoutX="185.0" layoutY="148.0" startX="-68.75" startY="1.707122802734375" />
+            <ChoiceBox layoutX="34.0" layoutY="462.0" prefHeight="25.0" prefWidth="83.0" />
+            <Button layoutX="40.0" layoutY="374.0" mnemonicParsing="false" text="Add Class" />
+         </children>
+      </AnchorPane>
+      <Line endX="567.0" layoutX="233.0" layoutY="526.0" startX="-233.0" />
+      <Line endX="-99.0" endY="124.0" layoutX="215.0" layoutY="51.0" startX="-98.5" startY="-1.0" />
+      <Line endX="-192.0" endY="114.0" layoutX="225.0" layoutY="61.0" startX="-192.0" startY="-11.0" />
+      <VBox layoutX="148.0" layoutY="24.0" prefHeight="351.0" prefWidth="45.0" spacing="18.0" style="-fx-background-color: white;">
+         <children>
+            <Label text="Time" />
+            <Label text="9:00">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="10:00" />
+            <Label text="11:00" />
+            <Label text="12:00" />
+            <Label text="13:00" />
+            <Label text="14:00" />
+            <Label text="15:00" />
+            <Label text="16:00" />
+            <Label text="17:00" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </padding>
+      </VBox>
+      <HBox layoutX="193.0" layoutY="26.0" prefHeight="35.0" prefWidth="608.0" spacing="60.0" style="-fx-background-color: white;">
+         <children>
+            <Label text="Monday">
+               <padding>
+                  <Insets left="39.0" />
+               </padding>
+            </Label>
+            <Label text="Tuesday" />
+            <Label text="Wednesday" />
+            <Label text="Thursday" />
+            <Label text="Friday" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="161.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday9" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday9" text="Label" />
+            <Label fx:id="wednesday9" text="Label" />
+            <Label fx:id="thursday9" text="Label" />
+            <Label fx:id="friday9" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="56.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday10" text="Label">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday10" text="Label" />
+            <Label fx:id="wednesday10" text="Label" />
+            <Label fx:id="thursday10" text="Label" />
+            <Label fx:id="friday10" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="91.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: whjite;">
+         <children>
+            <Label fx:id="monday11" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday11" text="Label" />
+            <Label fx:id="wednesday11" text="Label" />
+            <Label fx:id="thursday11" text="Label" />
+            <Label fx:id="friday11" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="126.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday12" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday12" text="Label" />
+            <Label fx:id="wednesday12" text="Label" />
+            <Label fx:id="thursday12" text="Label" />
+            <Label fx:id="friday12" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="196.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday13" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday13" text="Label" />
+            <Label fx:id="wednesday13" text="Label" />
+            <Label fx:id="thursday13" text="Label" />
+            <Label fx:id="friday13" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="231.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday14" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday14" text="Label" />
+            <Label fx:id="wednesday14" text="Label" />
+            <Label fx:id="thursday14" text="Label" />
+            <Label fx:id="friday14" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="266.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday15" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday15" text="Label" />
+            <Label fx:id="wednesday15" text="Label" />
+            <Label fx:id="thursday15" text="Label" />
+            <Label fx:id="friday15" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="301.0" prefHeight="35.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday16" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday16" text="Label" />
+            <Label fx:id="wednesday16" text="Label" />
+            <Label fx:id="thursday16" text="Label" />
+            <Label fx:id="friday16" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="336.0" prefHeight="43.0" prefWidth="608.0" spacing="85.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="monday17" text="Label">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tuesday17" text="Label" />
+            <Label fx:id="wednesday17" text="Label" />
+            <Label fx:id="thursday17" text="Label" />
+            <Label fx:id="friday17" text="Label" />
+         </children>
+      </HBox>
+      <Line endX="-151.0" endY="497.5" layoutX="299.0" layoutY="28.0" startX="-151.0" startY="-3.5" />
+      <Line endX="575.0" layoutX="225.0" layoutY="25.0" startX="-225.0" />
+      <Line endX="401.0" layoutX="161.0" layoutY="379.0" startX="-161.0" />
+      <Line endX="-100.0" endY="146.0" layoutX="663.0" layoutY="380.0" startX="-100.0" />
+      <Line endX="-491.0" endY="-356.0" layoutX="699.0" layoutY="412.0" startX="-491.0" startY="-33.5" stroke="#527c4f" />
+      <Line endX="58.29296875" endY="-336.5" layoutX="700.0" layoutY="392.0" startX="-491.5" startY="-336.5" stroke="#527c4f" />
+      <Line endX="48.29296875" endY="-311.0" layoutX="710.0" layoutY="402.0" startX="-502.5" startY="-311.0" />
+      <Line endX="48.0" endY="-279.0" layoutX="710.0" layoutY="402.0" startX="-502.5" startY="-279.0" />
+      <Line endX="48.0" endY="-248.0" layoutX="710.0" layoutY="402.0" startX="-503.0" startY="-248.0" />
+      <Line endX="48.0" endY="-216.0" layoutX="710.0" layoutY="402.0" startX="-500.0" startY="-216.0" />
+      <Line endX="38.29296875" endY="-188.0" layoutX="720.0" layoutY="412.0" startX="-510.0" startY="-188.0" />
+      <Line endX="38.29296875" endY="-151.0" layoutX="720.0" layoutY="412.0" startX="-512.5" startY="-151.0" />
+      <Line endX="39.0" endY="-119.0" layoutX="720.0" layoutY="412.0" startX="-512.0" startY="-119.0" />
+      <Line endX="39.0" endY="-84.0" layoutX="720.0" layoutY="412.0" startX="-512.0" startY="-84.0" />
+      <AnchorPane layoutX="758.0" layoutY="26.0" prefHeight="357.0" prefWidth="44.0" style="-fx-background-color: palegreen;" />
+      <Line endX="80.0" endY="-31.0" layoutX="719.0" layoutY="414.0" startX="-156.0" startY="-31.0" />
+      <Line endX="-76.20709228515625" endY="355.5" layoutX="834.0" layoutY="26.0" startX="-76.20709228515625" startY="-0.5" />
+      <Label layoutX="588.0" layoutY="445.0" text="put a picture here or something" />
+   </children>
+</AnchorPane>
